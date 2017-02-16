@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> I'm a cool page</title>
+	<style>
+		.boring-style {
+			color: gray;
+			background-color: blue;
+		};
+		.fancy-style {
+            color: red;
+            background-color: green;
+
+		};
+
+
+	</style>
+</head>
+<body>
+    <h1>This is my page:</h1>
+
+    <div id="myDiv">
+
+        I start like this....
+    </div>
+	
+    <script>
+    	// document.
+
+       var myElement = document.getElementByID("myDiv");
+
+
+
+        console.log(myElement);
+        myDiv.innerHTML = '<p> i end like this </p>';
+
+        console.log(myElement.innerHTML);
+
+        myElement.setAttribute('class', 'fancy-style');
+
+        var newDiv = document.createElement('div');
+
+        newDiv.innerHTML = 'new content';
+
+        myElement.appendChild(newDiv);
+
+    </script>
+
+</body>
+</html>
